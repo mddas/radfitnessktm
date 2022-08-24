@@ -1,0 +1,334 @@
+.sidebar-section {
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      align-items: center;
+      position: relative;
+      padding: 0 0 15px;
+      display: block;
+    }
+  }
+}
+
+.sidebar-title {
+  font-size: 18px;
+  line-height: 1;
+  color: #1d1d1d;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  position: relative;
+  display: block;
+  border-bottom: 1px solid #ebebeb;
+  text-transform: capitalize !important;
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 60px;
+    height: 2px;
+    background: #146cda;
+  }
+}
+
+.sidebar-category {
+  padding: 30px;
+  background-color: #f7f7f7;
+  margin-bottom: 30px;
+
+  #category-accordion {
+    ul.category-list {
+      margin: 0;
+      li {
+        list-style-type: none;
+        font-weight: 300;
+      }
+    }
+  }
+
+  span.sub-toggle {
+    display: inline-block;
+    position: absolute;
+    top: 8px;
+    right: 0;
+    width: 5px;
+    height: 16px;
+    text-align: center;
+    background: transparent;
+    line-height: 0;
+    z-index: 99;
+    cursor: pointer;
+    color: #1d1d1d;
+    font-size: 11px;
+  }
+
+  .verticalcat-menu ul {
+    border: none;
+    width: 100%;
+    background: transparent;
+  }
+
+  .verticalcat-menu ul li {
+    display: block;
+    position: relative;
+  }
+
+  .verticalcat-menu ul.nav-menu > li > a {
+    padding: 8px 16px;
+  }
+
+  .verticalcat-menu ul.nav-menu > li:last-child > a {
+    border: none;
+  }
+
+  .verticalcat-menu ul li a {
+    border: none;
+    color: #1d1d1d;
+  }
+
+
+  .verticalcat-menu ul li ul {
+    display: none;
+    box-shadow: none;
+    width: 100%;
+    position: relative;
+    left: auto;
+    visibility: visible;
+    opacity: 1;
+    transition: none;
+    transform: none;
+    border: none;
+    margin-top: 6px;
+    background: transparent;
+  }
+
+  .verticalcat-menu ul li ul li {
+    position: relative;
+    display: block;
+    padding: 0 0 4px;
+  }
+
+  .verticalcat-menu ul li ul li a {
+    padding: 11px 20px;
+    font-size: 13px;
+  }
+
+  .verticalcat-menu ul li:hover > ul {
+    transform: none;
+
+  }
+
+  .verticalcat-menu ul li ul li ul {
+    top: 0%;
+    margin: 0;
+    list-style: none;
+    z-index: 1;
+    transform: none;
+    display: block;
+    box-shadow: none;
+    width: 100%;
+    position: relative;
+    left: auto;
+    visibility: visible;
+    opacity: 1;
+    transition: none;
+    border: none;
+    background: transparent;
+  }
+
+  .verticalcat-menu ul li ul li:hover > ul {
+    transform: translate(0, 0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .verticalcat-menu ul li ul li {
+    position: relative;
+  }
+
+  .verticalcat-menu ul li ul li ul {
+    display: none;
+    box-shadow: none;
+    width: 100%;
+    position: relative;
+    left: auto;
+    visibility: visible;
+    opacity: 1;
+    border: none;
+    transform: none;
+    background: transparent;
+  }
+
+  .verticalcat-menu div > ul > li.menu-item-has-children:before,
+  .verticalcat-menu ul ul li.menu-item-has-children:before {
+    display: none;
+  }
+  .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    margin: 2px 0 0 0;
+    padding: .5em .5em .5em .7em;
+    border: none;
+    background: #f6f6f6;
+    color: #454545;
+    font-weight: 300;
+  }
+  .ui-icon-triangle-1-e::after {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    font-size: 12px
+  }
+
+  .ui-icon-triangle-1-s::after {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    font-size: 12px
+  }
+  .ui-icon-triangle-1-e, .ui-icon-triangle-1-s {
+    float: right;
+  }
+}
+
+ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content ui-accordion-content-active {
+  padding: 5px 0;
+}
+
+.sidebar-section .ui-state-default {
+  outline: 0;
+  border: none;
+}
+
+.sidebar-filter {
+  border: 2px solid #f7f7f7;
+  padding: 30px;
+
+  h4 {
+    margin-bottom: 20px;
+  }
+  .filter-list-size input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+
+  .checker {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    user-select: none;
+  }
+
+  /* On mouse-over, add a grey background color */
+  .checker:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+
+  /* When the checkbox is checked, add a blue background */
+  .checker input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the checkmark when checked */
+  .checker input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  /* Style the checkmark/indicator */
+  .checker .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+
+  #input-number-min,
+  #input-number-max {
+    padding: 7px;
+    margin: 15px 5px 5px;
+    width: 70px;
+  }
+}
+
+.filter-list-price {
+  margin-bottom: 20px;
+}
+
+.sort-wrapper {
+  padding: 12px 30px;
+  border: 1px solid #ebebeb;
+  background: #fff;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  display: flex;
+  p {
+    margin: 0;
+  }
+
+  .product-numbers {
+    flex: 0 0 55%;
+    width: 55%;
+  }
+
+  .select-shoing-wrap {
+    flex: 0 0 45%;
+    width: 45%;
+  }
+  .shot-product {
+  padding-right: 3px;
+  }
+  .shop-select {
+    width: 82%;
+
+    select {
+      border: 1px solid #ebebeb;
+      padding: 2px 15px;
+      line-height: 24px;
+      font-size: 14px;
+      margin: 0;
+      background: #f7f7f7;
+      border-radius: 30px;
+      color: #47494a;
+      text-align: left;
+      box-shadow: none;
+      width: 100%;
+    }
+  }
+}

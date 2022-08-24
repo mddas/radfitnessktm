@@ -1,0 +1,674 @@
+/*----------------------------------------------------------------------
+## Breadcrumbs
+------------------------------------------------------------------------*/
+.breadcrumblinks {
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+ul.breadcrumb {
+  border-bottom: 1px solid #dddddd;
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.breadcrumb li {
+  display: inline-block;
+  position: relative;
+  margin-right: 11px;
+}
+
+ul.breadcrumb li a {
+  color: #3e8675;
+}
+
+ul.breadcrumb li:after {
+  content: " \f054";
+  padding: 0 5px;
+  font-size: 10px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  position: absolute;
+  right: -17px;
+  top: 5px;
+}
+
+ul.breadcrumb li:last-child:after {
+  content: none;
+}
+
+/*----------------------------------------------------------------------
+## Product Deatail
+------------------------------------------------------------------------*/
+.product-detail {
+  margin: 40px 0 0 0;
+}
+
+.product-detail .photos {
+  display: inline;
+  width: 100%;
+
+}
+
+.product-detail .photos .mainimage {
+  padding-left: 100px;
+  margin: 0;
+  display: block;
+  width: 100%;
+
+}
+
+.product-detail .photos .mainimage figure {
+  border: 1px solid #c5c5c5;
+}
+
+.product-detail .photos .mainimage .img {
+  width: 100%;
+}
+
+.product-detail .photos ul.photo-list {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 80px;
+  margin-right: 20px;
+  float: left;
+}
+
+.product-detail .photos li {
+  display: block;
+  overflow: hidden;
+  margin-bottom: 10px;
+  border: 1px solid #c5c5c5;
+}
+
+.description {
+  h3 {
+    padding: 15px 0;
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 35px;
+  }
+  p {
+
+  }
+}
+
+.zoomWrapper {
+  overflow: hidden;
+}
+
+.product-detail .photos li img {
+  width: 100%;
+}
+
+.product-detail .photos figure {
+  margin: 0;
+
+}
+
+.productDetails {
+  display: block;
+  padding: 0 30px 30px;
+  .description {
+    h1, h2, h3 {
+      font-size: 18px;
+    }
+    ul {
+      margin: 0;
+    }
+  }
+}
+
+.productDetails .titleName {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.productDetails .titleName small {
+  font-size: 13px;
+  font-weight: 400;
+  display: block;
+}
+
+.productDetails .socialshare {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.socialshare label {
+  font-size: 14px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-right: 30px;
+  font-weight: 700;
+  color: #000000;
+  line-height: 24px;
+}
+
+.productDetails .socialshare ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 70px;
+}
+
+.productDetails .socialshare ul li {
+  display: inline-block;
+  margin: 0;
+}
+
+.productDetails .socialshare ul li a {
+  display: block;
+  text-align: center;
+  padding: 8px 16px;
+
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.productDetails .cost {
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.productDetails .cost .newcost {
+  float: left;
+  margin-right: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #242a2d;
+}
+
+.productDetails .cost .oldcost {
+  float: left;
+  text-decoration-line: line-through;
+  color: #999999;
+  font-size: 14px;
+}
+
+.productDetails .quantity {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.productDetails .quantity .label {
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-right: 30px;
+  font-weight: 700;
+  color: #000000;
+  line-height: 40px;
+}
+
+.productDetails .quantity .field {
+  padding-left: 100px;
+}
+
+.productDetails .quantity .field .number {
+  width: 190px;
+  position: relative;
+}
+
+.productDetails .quantity .field .number button {
+  height: 100%;
+  background: #2b5480;
+  color: #FFF;
+  position: absolute;
+  top: 0;
+  padding: 10px 24px 23px 24px;
+}
+
+.productDetails .quantity .field .number button.left {
+  border-right: 1px solid #2b5480;
+  left: 0;
+
+}
+
+.productDetails .quantity .field .number button.right {
+  border-left: 1px solid #2b5480;
+  right: 0;
+}
+
+.productDetails .quantity .field .number input.center {
+  text-align: center;
+  width: 100%;
+  padding: 6px 50px 6px 50px;
+  font-size: 20px;
+  margin: 0;
+  border-color: #2b5480;
+}
+
+.productDetails .quantity .field .number input[disabled] {
+  background: #ffffff;
+}
+
+.productDetails .shipping {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.productDetails .shipping .label {
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-right: 30px;
+  font-weight: 700;
+  color: #000000;
+  line-height: 40px;
+}
+
+.productDetails .shipping .field {
+  padding-left: 135px;
+  line-height: 38px;
+}
+
+.productDetails .btn-cart {
+  display: inline-block;
+  width: 100%;
+}
+
+.productDetails .btn-cart button {
+  width: calc(50% - 10px);
+  float: left;
+  margin-right: 10px;
+  background: #2b5480;
+  color: #ffffff;
+  line-height: 27px;
+  height: 48px;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.productDetails .quantity .field .number button:hover {
+  color: #ffffff;
+  background: #242a2d;
+  cursor: pointer;
+}
+
+.productDetails .btn-cart button.buy {
+  background: #489f6e;
+}
+
+/*--------------------------- Contact Us ---------------------------------*/
+.contact_form_page {
+  margin-bottom: 50px;
+  margin-top: 60px;
+}
+
+.contact-icon {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.contact-icon .box {
+  display: flex;
+  align-items: center;
+}
+
+.contact-icon .icon-box {
+  width: 15%;
+}
+
+.contact-icon .text p {
+  margin: 0;
+}
+
+.contact-icon .contact-inner a {
+  font-size: 16px;
+  display: block;
+  color: #737373;
+}
+
+.contact-icon .contact-inner i {
+  color: #fff;
+  display: inline-block;
+  font-size: 26px;
+  text-align: center;
+  line-height: 48px;
+  margin-right: 15px;
+  border-radius: 3px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #000;
+  background: #000;
+  margin-top: 15px;
+}
+
+.contact-icon .contact-inner a span {
+  line-height: 30px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.contact_form .wpcf7 p {
+  margin-bottom: 0;
+}
+
+.contact_form .wpcf7 label {
+  display: inline-block;
+  margin-bottom: .5rem;
+  width: 100%;
+}
+
+.contact_form .wpcf7 input, .contact_form .wpcf7 .wpcf7-textarea {
+  background: #f2f2f2;
+  width: 100%;
+}
+
+.contact_form .wpcf7 .wpcf7-textarea {
+  height: 200px;
+}
+
+textarea {
+  width: 100%;
+}
+
+.contact_form input[type="submit"] {
+  display: inline-block;
+  position: relative;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  padding: 7px 28px;
+  font-size: 15px;
+  line-height: 1.5;
+  z-index: 9;
+  overflow: hidden;
+  letter-spacing: 0.5px;
+  color: #FFF;
+  border: 1px solid $primary_color;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  width: 100%;
+  background: #202020;
+  &:hover {
+    background: $secondary_color;
+    color: $color_white;
+    border: 1px solid $secondary_color;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
+
+  &:before {
+    content: '\f107';
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    color: #8baf31;
+    right: 11px;
+    font-size: 14px;
+  }
+}
+
+/*------------------------------------------------------------*/
+.fitness-page {
+  h3 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  p {
+    font-size: 1.6rem;
+  }
+}
+
+.section-dealer {
+  .box {
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.75);
+    padding: 15px;
+    h4 {
+      font-weight: 600;
+      font-size: 24px;
+    }
+
+    p {
+      b {
+        font-weight: 700;
+        margin-right: 3px;
+      }
+    }
+
+    i {
+      color: #2558b5;
+      margin-left: 10px;
+      font-size: 25px;
+    }
+  }
+
+}
+
+ul.general-tips {
+  margin: 0 0 15px 0;
+  padding: 0;
+  li {
+    list-style-type: none;
+    &:before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f061";
+    }
+    a {
+      &:hover {
+        color: $secondary_color;
+      }
+    }
+  }
+}
+
+ol {
+  margin: 0 0 15px 0;
+  padding: 0;
+  li {
+    list-style-type: decimal;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}
+
+/*---------------------- Services ----------------------*/
+.service-page {
+  margin-top: 30px;
+  h3 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+
+
+  h2.section-title {
+    margin-bottom: 0px !important;
+  }
+
+  figure {
+    box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.3);
+  }
+  .service-page-listing {
+    align-items: center;
+    margin-top: 60px;
+    background: #e8e8e8;
+    img {
+      width: 100%;
+    }
+    .service-left, .service-right {
+      min-width: 50%;
+      max-width: 50%;
+      @media (max-width: 768px) {
+        min-width: 100%;
+        max-width: 100%;
+      }
+    }
+    .content_box {
+      padding: 20px;
+    }
+
+    &.even {
+      flex-wrap: wrap-reverse;
+    }
+
+  }
+
+}
+
+/*---------------------- Service Detail ----------------------*/
+.service-detail-page {
+  h3 {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  h2 {
+    font-weight: 700;
+    color: #000;
+    font-size: 45px;
+    margin-top: 40px;
+  }
+
+  figure {
+    box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.3);
+    @media (max-width: 768px) {
+      margin-top: 15px;
+    }
+  }
+}
+
+.register_now {
+  padding: 60px 0 30px;
+  box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.3);
+  .box {
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 24px;
+    font-weight: 800;
+    margin: 21px 0 10px;
+  }
+  .join-now {
+    font-size: 24px;
+    padding: 13px 28px;
+  }
+  .learn-more {
+    text-align: center;
+  }
+}
+
+/*---------------------- Training ----------------------*/
+
+.tainning {
+  h3 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .figure-wrap {
+    filter: drop-shadow(0px 3px 12px rgba(0, 0, 0, 0.3));
+  }
+  figure {
+    background: #000;
+
+    clip-path: polygon(0 0, 95% 0, 95% 45%, 100% 50%, 95% 55%, 95% 100%, 0 100%);
+
+  }
+}
+
+.training-programs {
+  h3 {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  figure {
+    box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.3);
+    margin-bottom: 15px;
+  }
+}
+
+.community {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  .box {
+    text-align: center;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  figure {
+    max-width: 170px;
+    margin: 0 auto;
+  }
+}
+
+.banner-title {
+  background: url("../images/bg-group.png");
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+  h1 {
+    font-size: 5rem;
+    color: #FFF;
+    font-weight: 700;
+    @media (max-width: 768px) {
+      font-size: 4rem;
+    }
+  }
+  h2 {
+    font-size: 3.2rem;
+    color: #FFF;
+  }
+}
+
+.personal-training-description {
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .box {
+    max-width: 750px;
+    margin: 0 auto;
+    background: #e6e2e2;
+    padding: 50px 100px;
+    @media (max-width: 768px) {
+      padding: 50px 40px;
+    }
+  }
+
+}
