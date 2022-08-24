@@ -47,17 +47,15 @@
                                                     <a href="{{route('pages',$menu->alias)}}"> {{$menu->nav_name}} </a>
 
                                                     @php $child = $frontend_helper->childMenu($menu->id) @endphp
-                                                    <ul class="sub-menu">
-
-                                                        @foreach($child as $childMenu)
-
-                                                            <li>
-                                                                <a href="{{route('pages',$childMenu->alias)}}"> {{$childMenu->nav_name}} </a>
-                                                            </li>
-
-                                                        @endforeach
-
-                                                    </ul>
+                                                    @if($child->count()>0)
+                                                        <ul class="sub-menu">                                                        
+                                                                @foreach($child as $childMenu)
+                                                                    <li>
+                                                                        <a href="{{route('pages',$childMenu->alias)}}"> {{$childMenu->nav_name}} </a>
+                                                                    </li>
+                                                                @endforeach
+                                                        </ul>
+                                                    @endif
 
                                                 </li>
 
