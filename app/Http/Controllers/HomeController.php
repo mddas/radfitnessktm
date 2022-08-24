@@ -16,7 +16,7 @@ class HomeController extends Controller
 {
     public function index(FrontendHelper $frontendHelper)
     {
-
+        
         $settings = GlobalSetting::where('id', 1)->first();
 
         $menus = Navigation::where('nav_category', 'Main')->where('parent_page_id', 0)->where('page_status', 1)->orderBy('position', 'asc')->get();

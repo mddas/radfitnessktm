@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset('website/css/style.min.css')}}"/>
     <link rel="stylesheet" type="text/css" href="{{asset('website/fonts/style.css')}}"/>
     <link rel="stylesheet" type="text/css" href="{{asset('website/css/jquery.fancybox.min.css')}}"/>
+    <link rel="stylesheet" type="text/css" href="{{('css/style.css')}}"/>
 
 </head>
 

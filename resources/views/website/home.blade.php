@@ -42,15 +42,10 @@
         </div>
     </div>
 
-
-    @include('website.partials.services')
-
+    @include('website.partials.about')
+    @php $services = $frontend_helper->getPagesByID(1); @endphp
     @php $video = $frontend_helper->getPagesByID(50); @endphp
-
-    <section class="section-video">
-        <div class="container">
-            <div class="row" style="justify-content: space-around">
-                @php
+                 @php
                     $videoArray = explode('?v=',$video->link);
  
                     if(!isset($videoArray[1])){
@@ -65,21 +60,55 @@
                     }
 
                 @endphp
-                <div class="col-lg-6 col-md-4 col-sm-12">
-                    <img src="https://img.youtube.com/vi/{{$videoId}}/hqdefault.jpg" alt="" width="100%"/>
+    <style>
+        .home-feature-category .fitness-feature-category__box{
+            margin: 0 0 30px;
+            padding: 0;
+        }
+        .home-feature-category .fitness-feature-category__title{
+            font-size: 28px;
+        }
+    </style>
+    <section class="fitness-feature-category home-feature-category">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <!---start--->
+                         @forelse($services->childs as $service)
+                            <div class="col-md-6">
+                                <div class="fitness-feature-category__box">
+                                    <a href="{{route('pages',$service->alias)}}" tabindex="0">
+                                    
+                                        <figure>
+                                            <img src="{{ Image::make(public_path('uploads/banner_image/'.$service->banner_image),'service-list')->toUrl() }}" alt="">
+                                            <div class="fitness-feature-category__content">
+                                                <h3 class="fitness-feature-category__title"> {{$service->nav_name}}</h3>
+                                            </div>
+                                        </figure>
+                                    </a>
+                                </div>
+                            </div>
+                         @empty
+                        @endforelse
+                        <!----close---->
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="section-video">
+                          <img src="https://img.youtube.com/vi/{{$videoId}}/hqdefault.jpg" alt="" width="100%"/>
                     <a data-fancybox href="https://www.youtube.com/watch?v={{$videoId}}" class=" box-shadow-ripples">
                         <i class="fab fa-youtube"></i>
 
                     </a>
-
-
-                </div>
-                <div class="col-lg-12">
-                    <h3>We Provide world class equipment from PRECOR USA with certified Trainners</h3>
-                </div>
+                    <!-- <iframe width="100%" height="415" src="https://www.youtube.com/embed/tgbNymZ7vqY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                    </div>
+                    </div>
             </div>
         </div>
     </section>
+
+
 
     @include('website.partials.hot-recomended')
 

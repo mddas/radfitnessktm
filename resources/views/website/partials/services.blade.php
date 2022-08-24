@@ -1,13 +1,13 @@
 @php $services = $frontend_helper->getPagesByID(1); @endphp
 <section class="fitness-feature-category">
-    <div class="container container-v2">
+    <!-- <div class="container container-v2">
         <div class="row">
             <div class="col-lg-12">
                 <h2 class="section-title text-center">{{$services->nav_name}}</h2>
             </div>
         </div>
 
-    </div>
+    </div> -->
     <div class="row no-gutter pl-2 pr-2 service-slider">
         @forelse($services->childs as $service)
             <div class="fitness-feature-category__box">
@@ -21,10 +21,6 @@
                             <h3 class="fitness-feature-category__title"> {{$service->nav_name}}</h3>
                         </div>
                     </figure>
-
-                    <div class="fitness-feature-category__description">
-                        {!!  $service->short_content !!}
-                    </div>
                 </a>
             </div>
         @empty

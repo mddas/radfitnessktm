@@ -23,9 +23,9 @@
                         </div>
                     </figure>
 
-                    <div class="fitness-hot-recommended__description">
+                    <!-- <div class="fitness-hot-recommended__description">
                         {!!  $row->short_content !!}
-                    </div>
+                    </div> -->
                 </a>
             </div>
         @empty
