@@ -41,12 +41,9 @@
                                     @foreach($menus as $menu)
                                         @if($menu->id !=33)
                                             @if(count($menu->childs) && $menu->id !=8)
+                                                @php $child = $frontend_helper->childMenu($menu->id) @endphp
                                                 <li class="menu-item-has-children">
-
-
-                                                    <a href="{{route('pages',$menu->alias)}}"> {{$menu->nav_name}} </a>
-
-                                                    @php $child = $frontend_helper->childMenu($menu->id) @endphp
+                                                    <a href=" @if($child->count()>0) # @else {{route('pages',$menu->alias)}} @endif"> {{$menu->nav_name}} </a>                                                    
                                                     @if($child->count()>0)
                                                         <ul class="sub-menu">                                                        
                                                                 @foreach($child as $childMenu)
