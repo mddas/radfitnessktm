@@ -6,13 +6,13 @@
     <div class="alert alert-info">{{ Session::get('success') }}</div>
 @endif
 <header>
-    <div class="header_top">
+    <!-- <div class="header_top">
         <div class="container">
             <div class="row">
 
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="main_header">
         <div class="container">
             <div class="row">
