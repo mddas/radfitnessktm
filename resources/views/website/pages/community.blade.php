@@ -35,8 +35,4 @@
         </div>
 
     </section>
-
-
-    @include('website.partials.contact-form')
-
 @endsection

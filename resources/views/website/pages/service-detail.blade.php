@@ -85,10 +85,10 @@
 
     @endif
 
-    @if($page->id == 20)
-        @include('website.partials.hot-recomended')
-    @endif
-    @if($page->id == 20 || $page->id == 2)
+    <!-- @if($page->id == 20)
+        include('website.partials.hot-recomended')
+    @endif -->
+    <!-- @if($page->id == 20 || $page->id == 2)
         @php $programs = $frontend_helper->getPagesByID(25); @endphp
         <section class="training-programs">
             <div class="container">
@@ -118,7 +118,7 @@
                 @endforelse
             </div>
         </section>
-    @endif
+    @endif -->
 
     @if(  $page->id == 3)
         @php $spas = $frontend_helper->getPagesByID(3); @endphp
@@ -234,7 +234,7 @@
         </div>
 
 
-        @include('website.partials.services')
+        <!-- @include('website.partials.services') -->
     @endif
 
     @include('website.partials.contact-form')

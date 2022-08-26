@@ -35,7 +35,7 @@
 
 
 @php $trainers = $frontend_helper->getPagesByID(33); @endphp
-<section class="training-programs">
+<!-- <section class="training-programs">
 
         <div class="row no-gutters">
             <div class=" col-md-12">
@@ -57,6 +57,6 @@
         </div>
 
 
-</section>
+</section> -->
 
 @endsection

@@ -14,7 +14,4 @@
     </section>
 
 
-    @include('website.partials.services')
-
-
 @endsection
