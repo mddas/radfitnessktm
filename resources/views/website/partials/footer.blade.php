@@ -16,7 +16,7 @@
                         <ul class="menu-list">
                             @if($settings->site_email)
                                 <li>
-                                    <a><i class="fas fa-map-marker-alt"></i> {{$settings->site_email}}</a>
+                                    <a><i class="fas fa-map-marker-alt"></i> {{$settings->website_full_address}}</a>
                                 </li>
                             @endif
                             @if($settings->phone)
