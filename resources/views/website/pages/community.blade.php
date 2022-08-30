@@ -37,6 +37,7 @@
         color: #000 !important;
     }
 </style>
+
 <section class="about-home">
     <div class="container container-v2">
         <h2 class="section-title"><span>Community</span></h2>
@@ -45,7 +46,7 @@
             <p>@php echo $page->long_content; @endphp </p>
         </div> 
         <div class = "col-md-6" >
-            <img src="/uploads/banner_image/{{$page->banner_page}}">
+            <img src="/uploads/banner_image/{{$page->banner_image}}">
         </div>
         </div>
     </div>
