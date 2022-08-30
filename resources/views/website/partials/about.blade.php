@@ -47,7 +47,7 @@
             <a href="/about-us" class="read-more">Read More</a>
         </div> 
         <div class = "col-md-6" >
-            <img src="http://127.0.0.1:8000/uploads/banner_image/570-428/crop/1646636847_Untitled-1.jpg">
+            <img src="/uploads/banner_image/{{$about->banner_image}}">
         </div>
         </div>
     </div>
